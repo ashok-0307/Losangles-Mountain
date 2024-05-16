@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+}
+
+.banner_one {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.background-overlay img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.content {
+  font-size: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 0.7em;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.losangles_text {
+  color: #525355;
+}
+
+.mountain_text {
+  color: #485371;
+}
+
+.nav-link {
+  text-decoration: underline;
+}
+
+/* --- History Section --- */
+
+.history {
+  background-image: url(/image/container-one-bg.jpe);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#top-container {
+  margin: 1em auto;
+}
+
+#bottom-container {
+  margin-top: auto;
+  padding-right: 0;
+  padding-left: 0;
+  overflow: hidden;
+}
+
+.title {
+  width: 70%;
+  margin: 35px auto;
+  text-align: left;
+}
+.history_heading {
+  width: fit-content;
+  margin-left: 5px;
+}
+.history-title {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.history-number {
+  display: inline-block;
+  line-height: 32px;
+  text-align: center;
+  font-size: 85px;
+  font-weight: 600;
+  color: #6b7c97;
+  letter-spacing: 0px;
+}
+
+.rigth {
+  display: flex;
+  font-size: 10px;
+  flex-flow: column wrap;
+  margin-top: 20px;
+}
+
+.history-text {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: #40506b;
+}
+
+.history-box {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-top: 2px;
+  height: 13px;
+  width: 13px;
+  background-color: #6b7c97;
+}
+
+/* Custom styling for carousel */
+
+.carousel {
+  overflow: hidden;
+  background-color: #37435db0;
+  height: 9em;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.slider_images {
+  width: 130px;
+  height: 115px;
+  margin: auto 0;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 1;
+  width: 8%;
+}
+
+.carousel-item.active {
+  filter: brightness(1.2);
+}
+
+/* Team Section   */
+.team_section {
+  height: 100vh;
+  overflow: hidden;
+}
+.team_top-container {
+  min-height: 10vh;
+  width: 70%;
+  margin: 30px auto;
+  text-align: left;
+}
+
+.nav-tabs {
+  background-color: #40506b;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: rgba(240, 248, 255, 0.345);
+  border: none;
+  color: aliceblue;
+  border-radius: 0;
+}
+
+.nav-link {
+  color: white;
+  border: none;
+}
+.team_bottom-container {
+  height: 90vh;
+  overflow: hidden;
+}
+.no-padding-table {
+  position: absolute;
+  top: 80%;
+  left: 15%;
+  z-index: 3;
+}
+.no-padding-table th,
+.no-padding-table td {
+  padding-top: 0;
+  padding-left: 40px;
+  text-align: left;
+  background-color: #fafbfcaa;
+}
+
+.top-gap td,
+.bottom-gap td {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footer {
+  background-color: #40506b;
+}
+.footer_logo {
+  line-height: 18px;
+  background-color: #40506b;
+  margin-bottom: 0;
+  margin-top: 0.5em;
+}
+@media (max-width: 768px) {
+  .content {
+    top: 50%;
+    font-size: 65px;
+  }
+
+  .background-overlay img {
+    width: 100%;
+    height: 100vh;
+  }
+  .team_top-container {
+    width: 100%;
+    margin: 30px auto;
+    text-align: left;
+    overflow: visible;
+  }
+  .no-padding-table {
+    position: absolute;
+    top: 78%;
+    left: 15%;
+    z-index: 3;
+  }
+  .no-padding-table th,
+  .no-padding-table td {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 435px) {
+  .content {
+    top: 50%;
+    font-size: 45px;
+  }
+  .description {
+    width: 100%;
+    text-align: left;
+    color: #40506b;
+  }
+  .title {
+    width: 100%;
+    margin-top: 0;
+  }
+  .history_desc {
+    padding: 0;
+    margin-left: 0;
+  }
+  .no-padding-table {
+    position: absolute;
+    top: 82%;
+    left: 15%;
+    z-index: 3;
+  }
+  .no-padding-table th,
+  .no-padding-table td {
+    font-size: 0.7rem;
+  }
+  .footer {
+    font-size: small;
+    padding-left: 0%;
+  }
+}
